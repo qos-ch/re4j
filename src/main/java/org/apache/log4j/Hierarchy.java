@@ -126,7 +126,7 @@ public class Hierarchy implements LoggerRepository, RendererSupport, ThrowableRe
         if (!this.emittedNoAppenderWarning) {
             LogLog.warn("No appenders could be found for logger (" + cat.getName() + ").");
             LogLog.warn("Please initialize the log4j system properly.");
-            LogLog.warn("See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.");
+            LogLog.warn("See https://reload4j.qos.ch/faq.html#noconfig for more info.");
             this.emittedNoAppenderWarning = true;
         }
     }

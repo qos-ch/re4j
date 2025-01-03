@@ -173,7 +173,7 @@ public class LogManager {
             repositorySelector = new DefaultRepositorySelector(new NOPLoggerRepository());
             guard = null;
             Exception ex = new IllegalStateException("Class invariant violation");
-            String msg = "log4j called after unloading, see http://logging.apache.org/log4j/1.2/faq.html#unload.";
+            String msg = "log4j called after unloading, see https://reload4j.qos.ch/faq.html#unload.";
             if (isLikelySafeScenario(ex)) {
                 LogLog.debug(msg, ex);
             } else {

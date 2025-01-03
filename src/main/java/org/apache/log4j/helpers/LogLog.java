@@ -65,9 +65,9 @@ public class LogLog {
      */
     private static boolean quietMode = false;
 
-    private static final String PREFIX = "log4j: ";
-    private static final String ERR_PREFIX = "log4j:ERROR ";
-    private static final String WARN_PREFIX = "log4j:WARN ";
+    private static final String PREFIX = "reload4j: ";
+    private static final String ERR_PREFIX = "reload4j:ERROR ";
+    private static final String WARN_PREFIX = "reload4j:WARN ";
 
     static {
         String key = OptionConverter.getSystemProperty(DEBUG_KEY, null);

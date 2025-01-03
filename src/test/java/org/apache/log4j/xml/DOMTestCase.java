@@ -131,9 +131,9 @@ public class DOMTestCase {
             System.setErr(sps);
             DOMConfigurator.configure(TEST_INPUT_PREFIX + "xml/DOMTest4.xml");
             common();
-            assertTrue(sps.stringList.get(0).contains("log4j:ERROR No appender named [A1] could be found."));
-            assertTrue(sps.stringList.get(1).contains("log4j:ERROR No appender named [A1] could be found."));
-            assertTrue(sps.stringList.get(2).contains("log4j:ERROR No appender named [A2] could be found."));
+            assertTrue(sps.stringList.get(0).contains("reload4j:ERROR No appender named [A1] could be found."));
+            assertTrue(sps.stringList.get(1).contains("reload4j:ERROR No appender named [A1] could be found."));
+            assertTrue(sps.stringList.get(2).contains("reload4j:ERROR No appender named [A2] could be found."));
         } finally {
             System.setErr(oldErr);
         }

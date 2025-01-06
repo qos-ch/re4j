@@ -18,6 +18,6 @@ public class VersionUtilTest {
         assertEquals(9, VersionUtil.getJavaMajorVersion("9.0.1"));
         assertEquals(18, VersionUtil.getJavaMajorVersion("18.3+xx"));
         assertEquals(19, VersionUtil.getJavaMajorVersion("19"));
-
+        assertEquals(21, VersionUtil.getJavaMajorVersion("21"));
    }
 }
